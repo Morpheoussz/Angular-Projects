@@ -1,0 +1,38 @@
+<!-- <p>
+  login works!
+</p> -->
+<!-- {{elo}} -->
+
+<div class=form>
+  <h3>SIGN IN</h3>
+  <form>
+      <input type="text" [(ngModel)]='username' name="username" placeholder="username" class="input"><br>
+      <input type="text" [(ngModel)]='password' name="password" placeholder="password" class="input">
+      <div class="check">
+          <div class="remember">
+                 <input type="checkbox" name="remember me" id=""> Remember me 
+          </div>
+          <div class="forgotpassword">
+             <ul>
+                 <li><a href="">Forgot password?</a></li>
+             </ul>
+          </div>
+      </div>
+      <button  name="login" (click)='Loginaction()' class="login">LOGIN</button>
+  </form>
+  <div class="OrSignInWith">
+      <hr style="margin-right:20px;">
+      or sign in with
+      <hr style="margin-left:20px;">
+  </div>
+  <div style="margin:40px 0 0 140px;">
+   <a href=""><i class="fa fa-facebook" 
+   style="color:aliceblue; background:#0d0d92; padding: 5px 10px; border-radius:2px; "></i></a>
+   <a href=""><i class="fa fa-google" class="google"
+   style="color:aliceblue; background:#ee3818; padding: 5px 7px; border-radius:2px; "></i></a>
+   <a href=""><i class="fa fa-twitter" class="twitter" 
+  style="color:aliceblue; background:#357ce7; padding: 5px 7px; border-radius:2px; "></i></a>
+ </div>
+ <p style="color:#838282;padding-top:35px; text-align: center;">Don't have an account? <a href="" style="color:teal; text-decoration: none">Sign up</a></p>
+ </div>
+
