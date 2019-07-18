@@ -1,3 +1,60 @@
-<p>
-  signup works!
-</p>
+<!-- <div class="blue">
+<div class= center>
+  <h2>Sign Up</h2>
+  <p>Please fill in this forms to create an account!</p>
+  <hr>
+  <form>
+    <div class="flex">
+      <input type="text" [(ngModel)]='name'  name="name" placeholder="Name">
+      <input type="text" [(ngModel)]='surname' name="surname" placeholder="Surname">
+    </div>
+    <input type="text" [(ngModel)]='othernames' name="othernames" placeholder="Othernames"><br>
+    <input type="email" [(ngModel)]='email' name="email" placeholder="Email"><br>
+    <input type="password" [(ngModel)]='password' name="password" placeholder="Password"><br>
+    <input type="checkbox" [(ngModel)]='checkbox' name="checkbox" class="checkbox">I accept the terms and conditions<br>
+    <button value="Sign Up" class="button" (click)='Signupaction()' >Sign Up</button>
+  </form>
+
+</div>
+</div> -->
+
+
+
+<div class=form>
+    <h3>SIGN UP </h3>
+    <div class=fillform>
+    <h5><font color='#ABAEB2'>Please fill in this form to create an account!</font> </h5>
+    </div>
+    <form action="" method="post" >
+        <input [(ngModel)]="name" type="text" name="name" placeholder="Name" class="input"><br>
+        <input [(ngModel)]="surname" type="text" name="surname" placeholder="Surname" class="input"><br>
+        <input [(ngModel)]="othernames" type="text" name="othernames" placeholder="Othernames" class="input"><br>
+        <input [(ngModel)]="email" type="text" name="email" placeholder="Email" class="input"><br>
+        <input [(ngModel)]="password" type="text" name="password" placeholder="password" class="input">
+        <div class="check">
+            <div class="remember">
+                   <input type="checkbox"  [(ngModel)]='checkbox' name="checkbox" id=""> I accept the Terms of Use & Privacy Policy 
+            </div>
+            <!-- <div class="forgotpassword">
+               <ul>
+                   <li><a href="">Forgot password?</a></li>
+               </ul>
+            </div> -->
+        </div>
+        <button (click)='Signupaction()' name="login" class="login">SIGN UP</button>
+    </form>
+    <h5>Already have an account? <a>Login here</a></h5>
+    <!-- <div class="OrSignInWith">
+        <hr style="margin-right:20px;">
+        or sign in with
+        <hr style="margin-left:20px;">
+    </div> -->
+    <!-- <div style="margin:40px 0 0 140px;">
+     <a href=""><i class="fa fa-facebook" 
+     style="color:aliceblue; background:#0d0d92; padding: 5px 10px; border-radius:2px; "></i></a>
+     <a href=""><i class="fa fa-google" class="google"
+     style="color:aliceblue; background:#ee3818; padding: 5px 7px; border-radius:2px; "></i></a>
+     <a href=""><i class="fa fa-twitter" class="twitter" 
+    style="color:aliceblue; background:#357ce7; padding: 5px 7px; border-radius:2px; "></i></a>
+   </div> -->
+   <p style="color:#838282;padding-top:35px; text-align: center;">Don't have an account? <a ui-sref="login" style="color:teal; text-decoration: none">Sign up</a></p>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApicallService } from 'src/app/services/apicall.service';
 
 @Component({
   selector: 'app-login',
@@ -7,18 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   public elo : string;
-  public username : any;
+  public email : any;
   public password : any;
   private data : any;
   
-  constructor() { }
+  constructor(private fff: ApicallService) { }
   goHome(x){
     this.elo = x;
   }
 
   Loginaction(){
-    this.data = {'username' : this.username , 'password' : this.password}
-    alert(JSON.stringify(this.data));
+    this.data = {'email' : this.email , 'password' : this.password , "key" : "A346"}
+    //alert(JSON.stringify(this.data));
+    this.fff.postData(this.data).subscribe(ans=>{ alert(JSON.stringify(ans));})
+    //alert(JSON.stringify(this.data));
   }
 
 
